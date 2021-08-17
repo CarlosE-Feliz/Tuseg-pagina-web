@@ -1,357 +1,304 @@
-body{
-    margin: 0%;
-    background-color: whitesmoke;
+body {
+  margin: 0%;
+  background-color: whitesmoke;
 }
-@media screen and (max-width:414px) {
-    .desplazarTexto{
-        width: 321px !important;
-        height: auto !important;
-        float: none !important;
-    }
-    .lema marquee h2{
-        width: 100% !important;
-        font-size: medium !important;
-    }
-    .main{
-    display: inline-block !important;     
-    }
-    .generales>figure{
-        height: 250px  !important;
-        width: 250px !important;
-        overflow: hidden !important;
-        position: relative !important;
-        border-radius: 6px !important;
-        box-shadow: 0px 15px 25px rgb(0,0,0,0.50) !important;
-    }
-    .personas>figure{
-        height: 250px  !important;
-        width: 250px !important;
-        overflow: hidden !important;
-        position: relative !important;
-        border-radius: 6px !important;
-        box-shadow: 0px 15px 25px rgb(0,0,0,0.50) !important;
-    }
-    .casas figure{
-        height: 250px  !important;
-        width: 250px !important;
-        overflow: hidden !important;
-        position: relative !important;
-        border-radius: 6px !important;
-        box-shadow: 0px 15px 25px rgb(0,0,0,0.50) !important;
-    }
-    
-    .headerFooter{
-        background-color: rgb(22, 17, 16)  !important;
-        display: flex  !important;
-        width: 250px !important;
-        height: 50%  !important;
-    }
-    .desplazarTexto{
-        margin-top: 20px !important;
-        color: #e2dddd !important;
-        /* line-height: 200px; */
-        float: left !important;
-        font-size: 40px !important;
-        width: 300px !important;
-        height: 40px !important;
-        display: flex !important;
-        line-height: 40px !important;
-        overflow: hidden !important;
-    
-    }
-    
-   
-    
 
-    /* Aquí correspondería el código CSS para pantallas de 320px */
-  
+.centrar {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+.desplazarTexto {
+  margin-top: 20px;
+  color: #e2dddd;
+  float: left;
+  font-size: 40px;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  line-height: 40px;
+  overflow: hidden;
+}
+.desplazarNav {
+  line-height: 20px;
+  float: right;
+  margin-left: 500px;
+  margin-top: 0px;
+}
+.desplazarNav > ul {
+  display: flex;
+  list-style: none;
+}
+
+.desplazarNav > ul > li > a {
+  display: inline-block;
+  color: #e2e2d5;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+  transition: all 800ms ease;
+}
+.desplazarNav > ul > li > a:hover {
+  background: rgb(80, 68, 68);
+  border-radius: 20px;
+}
+.desplazarTexto > ul {
+  list-style: none;
+  padding-left: 10px;
+  animation: cambiar 7s infinite;
+}
+#somos,
+#loquesomos {
+  margin: 0;
+}
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
   }
-.centrar{
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;  
-  }
-  .desplazarTexto{
-      margin-top: 20px;
-      color: #e2dddd;
-      /* line-height: 200px; */
-      float: left;
-      font-size: 40px;
-      width: 300px;
-      height: 40px;
-      display: flex;
-      line-height: 40px;
-      overflow: hidden;
-  
-  }
-  .desplazarNav{
-      line-height: 20px;
-      float: right;   
-      margin-left: 500px; 
-       margin-top: 0px;
-      }
-  .desplazarNav>ul{
-      display: flex;
-      list-style: none;
+  20% {
+    margin-top: 0;
   }
 
-  .desplazarNav >ul>li > a{
-      display: inline-block;
-      color: #e2e2d5;
-      text-decoration: none;
-      padding: 10px 20px;
-      line-height: normal;
-      font-size: 20px;
-      font-weight: bold;
-      -webkit-transition:all 800ms ease;
-      -o-transition:all 800ms ease;
-      transition:all 800ms ease;
+  25% {
+    margin-top: -40px;
   }
-  .desplazarNav >ul>li>a:hover{
-      background:rgb(80, 68, 68);
-      border-radius: 20px;
+  50% {
+    margin-top: -40px;
   }
-  .desplazarTexto>ul{
-      list-style: none;
-      padding-left: 10px;
-      animation: cambiar 7s infinite;
+
+  55% {
+    margin-top: -80px;
   }
-  #somos, #loquesomos{
-      margin: 0;
+  80% {
+    margin-top: -80px;
   }
-  @keyframes cambiar{ 
-      0%{ margin-top: 0;}
-      20%{ margin-top: 0;}
 
-      25%{margin-top: -40px;}
-      50%{ margin-top: -40px;}
-      
-      55%{ margin-top: -80px;}
-      80%{margin-top: -80px;}
+  85% {
+    margin-top: -40px;
+  }
+  95% {
+    margin-top: -40px;
+  }
 
-      85%{margin-top: -40px;}
-      95%{margin-top: -40px;}
-
-      100%{margin-top: 0px;}
-
-
+  100% {
+    margin-top: 0px;
+  }
 }
-.cabecera{
-    background-color: rgba(20, 20, 20, 0.3);
-    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+.cabecera {
+  background-color: rgba(20, 20, 20, 0.3);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 }
-.generales>figure{
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0px 15px 25px rgb(0,0,0,0.50);
+.generales > figure {
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.5);
 }
-.generales>figure>img{
-    width: 100%;
-    height:100%;
-    transition: all 500ms ease-out;
+.generales > figure > img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
 }
-.generales figure .ofrecemos{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(11, 103, 123, 0.6);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
+.generales figure .ofrecemos {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 103, 123, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
 }
-.generales figure:hover > .ofrecemos{
-    opacity: 1;
-    visibility: visible;
+.generales figure:hover > .ofrecemos {
+  opacity: 1;
+  visibility: visible;
 }
-.generales figure:hover > .ofrecemos >h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
+.generales figure:hover > .ofrecemos > h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
 }
-.generales figure:hover > img{
-    transform: scale(1.3);
+.generales figure:hover > img {
+  transform: scale(1.3);
 }
-.generales figure .ofrecemos h3{
-    color: white;
-    font-weight: 400px;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+.generales figure .ofrecemos h3 {
+  color: white;
+  font-weight: 400px;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-.generales figure .ofrecemos p{
-    color: rgb(241, 226, 198);
-    font-size: 16px;
-    line-height: 1.5;
-    width: 100%;
-    margin: auto;
+.generales figure .ofrecemos p {
+  color: rgb(241, 226, 198);
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  margin: auto;
 }
 
-
-.personas>figure{
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0px 15px 25px rgb(0,0,0,0.50);
+.personas > figure {
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.5);
 }
-.personas>figure>img{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-}
-
-.personas figure .cuidamos{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(11, 103, 123, 0.6);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-.personas figure:hover > .cuidamos{
-    opacity: 1;
-    visibility: visible;
-}
-.personas figure:hover > .cuidamos > h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
-}
-.personas figure:hover>img{
-    transform: scale(1.3);
-}
-.personas figure .cuidamos h3{
-    color: white;
-    font-weight: 400px;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-    font-family: Arial, "Helvetica Neue", sans-serif;
-}
-.personas figure .cuidamos p{
-    color: rgb(241, 226, 198);
-    font-size: 16px;
-    line-height: 1.5;
-    width: 100%;
-    margin: auto;
-
-
-}
-.main{
-    display: flex;
-   padding-left: 25px;
-}
-.casas>figure{
-    height: 250px;
-    width: 350px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
-}
-.casas>figure>img{
-    width: 100%;
-    height: 100%;
-    transition: all 500ms ease-out;
-}
-.casas figure .viviendas{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(11, 103, 123, 0.6);
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-.casas figure:hover > .viviendas{
-    opacity: 1;
-    visibility: visible;
-}
-.casas figure:hover > .viviendas > h3{
-    margin-top: 70px;
-    margin-bottom: 15px;
-}
-.casas figure:hover > img{
-    transform: scale(1.3);
-}
-.casas figure .viviendas h3{
-    color: white;
-    font-weight: 400px;
-    margin-bottom: 120px;
-    transition: all 500ms ease-out;
-    margin-top: 30px;
-    font-family: Arial, "Helvetica Neue", sans-serif;
-
-}
-.casas figure .viviendas p{
-    color: rgb(241, 226, 198);
-    font-size: 16px;
-    line-height: 1.5;
-    width: 100%;
-    margin: auto;
-
-}
-.lema{
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    justify-content: center;
-}
-.lema>marquee>h2{
-    color: rgba(99, 99, 90, 0.664);
-    text-shadow: 1px 6px 6px rgba(20, 20, 20, 0.3);
-
-}
-table{
-    width: 100px;
-    height: 10px;
-}
-footer{
-    background-color: rgb(6, 2, 1);
-    overflow: hidden;
-    height: 300px;
-    width: 100%;
-    opacity:0.9 ;
-    
-}
-.valores{
-    height: 100px;
-    align-content: center;
-    /* box-shadow: 1px 7px 8px rgba(20, 20, 20, 0.3); */
-}
-.headerFooter{
-    background-color: rgb(22, 17, 16);
-    display: flex;
-    width: 100%;
-    height: 50%;
-    justify-content: space-between;
-    /* opacity: 0.5; */
-}
-.headerFooter>h3{
-    color: whitesmoke;
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.mainFooter>p{
-    color: blanchedalmond;
-    line-height: 30px;
-    
-}
-.mainFooter{
-    display: flex;
-    text-align: center;
+.personas > figure > img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
 }
 
-.footerParagraph{
-    padding: 10px;
+.personas figure .cuidamos {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 103, 123, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.personas figure:hover > .cuidamos {
+  opacity: 1;
+  visibility: visible;
+}
+.personas figure:hover > .cuidamos > h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.personas figure:hover > img {
+  transform: scale(1.3);
+}
+.personas figure .cuidamos h3 {
+  color: white;
+  font-weight: 400px;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+}
+.personas figure .cuidamos p {
+  color: rgb(241, 226, 198);
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  margin: auto;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  margin: 25px 12px;
+}
+.casas > figure {
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+.casas > figure > img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.casas figure .viviendas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(11, 103, 123, 0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.casas figure:hover > .viviendas {
+  opacity: 1;
+  visibility: visible;
+}
+.casas figure:hover > .viviendas > h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.casas figure:hover > img {
+  transform: scale(1.3);
+}
+.casas figure .viviendas h3 {
+  color: white;
+  font-weight: 400px;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+}
+.casas figure .viviendas p {
+  color: rgb(241, 226, 198);
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  margin: auto;
+}
+.lema {
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: center;
+}
+.lema > marquee > h2 {
+  color: rgba(99, 99, 90, 0.664);
+  text-shadow: 1px 6px 6px rgba(20, 20, 20, 0.3);
+}
+table {
+  width: 100px;
+  height: 10px;
+}
+footer {
+  background-color: rgb(6, 2, 1);
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  opacity: 0.9;
+}
+.valores {
+  height: 100px;
+  align-content: center;
+  /* box-shadow: 1px 7px 8px rgba(20, 20, 20, 0.3); */
+}
+.headerFooter {
+  background-color: rgb(22, 17, 16);
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  /* opacity: 0.5; */
+}
+.headerFooter > h3 {
+  color: whitesmoke;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.mainFooter > p {
+  color: blanchedalmond;
+  line-height: 30px;
+}
+.mainFooter {
+  display: flex;
+  text-align: center;
+}
+
+.footerParagraph {
+  padding: 10px;
 }
